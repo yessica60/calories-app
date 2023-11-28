@@ -1,12 +1,15 @@
-import { StyleSheet, View } from "react-native";
+import { StyleSheet } from "react-native";
+import React from "react";
+import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
+import Routes from "./src/routes";
 
-import Home from "./src/components/organism/home";
-
-export default function App() {
+export default function App():JSX.Element {
   return (
-    <View style={styles.container}>
-      <Home />
-    </View>
+    <SafeAreaProvider>
+      <SafeAreaView style={{flex:1}} >
+        <Routes />
+      </SafeAreaView>
+    </SafeAreaProvider>
   );
 }
 
