@@ -1,10 +1,11 @@
 import { StyleSheet, View } from "react-native";
-import AddFoodModal from "./src/components/molecules/add-food-modal";
+
+import Home from "./src/components/organism/home";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <AddFoodModal />
+      <Home />
     </View>
   );
 }
