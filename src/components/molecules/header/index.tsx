@@ -2,7 +2,7 @@ import { View, Text, StyleSheet, Image } from "react-native";
 import { Button, Icon } from "@rneui/themed";
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
-import { RootStackParamList } from "../../../../types";
+import { RootStackParamList } from "../../../types";
 import { StackNavigationProp } from "@react-navigation/stack";
 const staticInfo = {
   name: "Edward Brito",
